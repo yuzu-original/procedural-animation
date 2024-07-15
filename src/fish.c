@@ -1,16 +1,10 @@
 #include <math.h>
 #include <stdlib.h>
 
+#include "./fish.h"
+
 #include <raylib.h>
 #include <raymath.h>
-
-#include "./chain.c"
-
-#define FISH_POINTS_COUNT 10
-
-typedef struct {
-    Chain chain;
-} Fish;
 
 static const float radiuses[FISH_POINTS_COUNT] = {20, 25, 25, 25, 22, 20, 15, 10, 9, 8}; 
 

@@ -1,13 +1,7 @@
-#include <stdlib.h>
+#include "./chain.h"
 
 #include <raylib.h>
 #include <raymath.h>
-
-typedef struct {
-    Vector2 *points;
-    size_t pointsCount;
-    float spacing;
-} Chain;
 
 void ChainDraw(Chain *chain) {
     for (size_t i = 0; i < chain->pointsCount; ++i) {

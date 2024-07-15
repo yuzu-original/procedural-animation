@@ -1,7 +1,7 @@
 #include <raylib.h>
 #include <raymath.h>
 
-#include "./fish.c"
+#include "./fish.h"
 
 int main(void) {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
