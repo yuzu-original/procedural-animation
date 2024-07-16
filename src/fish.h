@@ -1,7 +1,7 @@
 #ifndef FISH_H_
 #define FISH_H_
 
-#include "./chain.h"
+#include "chain.h"
 
 #include <raylib.h>
 

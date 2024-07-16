@@ -1,4 +1,4 @@
-#include "./chain.h"
+#include "chain.h"
 
 #include <raylib.h>
 #include <raymath.h>
