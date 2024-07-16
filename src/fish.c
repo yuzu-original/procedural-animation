@@ -30,12 +30,14 @@ void FishDraw(Fish *fish) {
     rlPushMatrix();
     rlTranslatef(v.x, v.y, 0);
     rlRotatef(RAD2DEG*angleToNext + 60, 0, 0, 1);
+    DrawEllipse(0, 0, 18, 10, WHITE);
     DrawEllipse(0, 0, 16, 8, Fade(BLUE, 0.8));
     rlPopMatrix();
     v = Vector2PointOnCircle(fish->chain.points[ind], radiuses[ind], angleToNext - PI/2);
     rlPushMatrix();
     rlTranslatef(v.x, v.y, 0);
     rlRotatef(RAD2DEG*angleToNext - 60, 0, 0, 1);
+    DrawEllipse(0, 0, 18, 10, WHITE);
     DrawEllipse(0, 0, 16, 8, Fade(BLUE, 0.8));
     rlPopMatrix();
     
@@ -45,12 +47,14 @@ void FishDraw(Fish *fish) {
     rlPushMatrix();
     rlTranslatef(v.x, v.y, 0);
     rlRotatef(RAD2DEG*angleToNext + 60, 0, 0, 1);
+    DrawEllipse(0, 0, 18, 10, WHITE);
     DrawEllipse(0, 0, 16, 8, Fade(BLUE, 0.8));
     rlPopMatrix();
     v = Vector2PointOnCircle(fish->chain.points[ind], radiuses[ind], angleToNext - PI/2);
     rlPushMatrix();
     rlTranslatef(v.x, v.y, 0);
     rlRotatef(RAD2DEG*angleToNext - 60,  0, 0, 1);
+    DrawEllipse(0, 0, 18, 10, WHITE);
     DrawEllipse(0, 0, 16, 8, Fade(BLUE, 0.8));
     rlPopMatrix();
 
