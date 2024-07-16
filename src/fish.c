@@ -20,9 +20,7 @@ void FishInit(Fish *fish, Vector2 points[FISH_POINTS_COUNT]) {
 }
 
 void FishResolve(Fish *fish, Vector2 targetPos) {
-    float d = Vector2Distance(fish->chain.points[0], targetPos);
-    targetPos = Vector2MoveTowards(fish->chain.points[0], targetPos, d/100);
-    ChainResolve(&fish->chain, targetPos);
+    ChainResolve(&fish->chain, Vector2Lerp(fish->chain.points[0], targetPos, 0.1));
 }
 
 void FishDraw(Fish *fish) {
